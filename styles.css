@@ -1,0 +1,264 @@
+:root {
+/* colors */
+  --violet: hsl(257, 40%, 49%);
+  --darkViolet: hsl(271, 36%, 24%);
+  --softMagenta: hsl(300, 69%, 71%);
+  --darkpink: hsl(300, 71%, 61%);
+  --white: #fff;
+
+/* images */
+  --desktopBG: url('images/bg-desktop.svg');
+  --mobileBG: url('images/bg-mobile.svg');
+}
+
+/* minimum CSS responsive */
+@media (min-width:300px){
+
+body {
+  background-image: var(--desktopBG);
+  background-color: var(--violet);
+  color: var(--white);
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* containers */
+#landing-page {
+  padding:3% 5%;
+}
+
+.landing-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding:0;
+  margin:3% 0;
+}
+
+/* logo */
+.huddle-logo {
+  width:200px;
+}
+
+/* landing-container sections */
+@media (min-width:1200px){
+.illustration-section {
+  flex: 0 0 auto;
+  width:55%;
+}
+
+.register-section{
+  flex: 0 0 auto;
+  width:45%;
+  padding:3% 0 5% 4%;
+}
+}
+
+/* illustration section */
+.illustration-img{
+  width: 100%;
+}
+
+/* registration section */
+.register-title{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size:2.5rem;
+  line-height: 1.5;
+  width:90%;
+}
+
+.register-paragraph{
+  margin-top:4%;
+  width:90%;
+}
+
+.register-button{
+  margin:3% 0;
+  padding:2%;
+  width:40%;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--violet);
+  background-color: var(--white);
+}
+
+.register-button:hover{
+  color:var(--white);
+  background-color:var(--softMagenta);
+}
+
+/* social account section */
+.social-accounts{
+  width:95%;
+  text-align: right;
+}
+
+/* facebook icon */
+.fa-facebook-f{
+  margin:0 5px;
+  padding:10px 12px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+}
+
+.fa-facebook-f:hover{
+  color:var(--darkpink);
+  border: 2px solid var(--darkpink);
+}
+
+/* twitter icon */
+.fa-twitter{
+  margin:0 5px;
+  padding:11px 8px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+}
+
+.fa-twitter:hover{
+  color:var(--darkpink);
+  border: 2px solid var(--darkpink);
+}
+
+/* instagram icon */
+.fa-instagram{
+  margin:0 5px;
+  padding:11px 9px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+}
+
+.fa-instagram:hover{
+  color:var(--darkpink);
+  border: 2px solid var(--darkpink);
+}
+
+/* attribution section */
+.attribution{
+  text-align:center;
+}
+
+a:link {
+  color: var(--darkViolet);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--darkViolet);
+}
+
+a:hover {
+  color: var(--darkpink);
+}
+
+/* for desktop and mobile responsiveness */
+@media (max-width:1000px) {
+    .illustration-section{
+        margin:auto;
+    }
+
+    .huddle-logo {
+      margin:3% 0 5%;
+      width:180px;
+    }
+
+    .register-section{
+      text-align: center;
+    }
+
+    .register-title{
+      width:60%;
+      margin:auto;
+      padding:5% 0;
+    }
+    .register-paragraph{
+      width:80%;
+      margin:auto;
+      padding:0 0 5%;
+    }
+
+    .social-accounts{
+      margin-top:5%;
+    }
+ }
+
+  @media (max-width:791px) {
+    body{
+      margin:5%;
+    }
+
+    .huddle-logo {
+      width:150px;
+    }
+
+    .register-title{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width:500px) {
+    body{
+      margin:5% 7%;
+    }
+
+    .huddle-logo {
+      width:110px;
+    }
+
+    .register-title{
+      font-size: 1.5rem;
+      width:100%;
+      margin-top:5%;
+    }
+
+    .register-paragraph{
+      width:95%;
+    }
+
+    .register-button{
+    width:50%;
+    }
+
+    .social-accounts{
+      margin:10% 0;
+    }
+  }
+
+@media (min-width:1000px) and (max-width:1287px) {
+    .illustration-section {
+      flex: 0 0 auto;
+      width:55%;
+    }
+
+    .register-section{
+      flex: 0 0 auto;
+      width:45%;
+      padding:5% 0 5% 4%;
+    }
+
+    .register-title{
+      width:80%;
+      font-size:2rem;
+    }
+  }
+
+@media (min-width:1000px) and (max-width:1158px) {
+  .register-title{
+    width:90%;
+    }
+  }
+
+@media (min-width:1000px) and (max-width:1090px) {
+    .register-title{
+      width:95%;
+    }
+ }
+
+@media (min-width:1000px) and (max-width:1029px) {
+    .register-title{
+      width:100%;
+    }
+  }
+}

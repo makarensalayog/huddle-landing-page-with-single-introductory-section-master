@@ -5,29 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Build The Community Your Fans Will Love
+  <div id="landing-page">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+  <img src="images/logo.svg" class="huddle-logo" alt="huddle-logo">
 
-  Register
+  <div class="landing-container">
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+  <div class="illustration-section">
+    <img src="images/illustration-mockups.svg" class="illustration-img" alt="illustration-mockups">
+  </div>
+
+  <div class="register-section">
+    <h1 class="register-title">Build The Community Your Fans Will Love</h1>
+
+    <p class="register-paragraph">
+      Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+      Create connections with your users as you engage in genuine discussion.
     </p>
-  </footer>
+
+    <button class="register-button" type="button" name="button">Register</button>
+  </div>
+
+    <div class="social-accounts">
+      <i class="fab fa-facebook-f fa-lg"></i>
+      <i class="fab fa-twitter fa-lg"></i>
+      <i class="fab fa-instagram fa-lg"></i>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/makarensalayog">Ma. Karen Salayog</a>.
+  </div>
+
+  </div>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a865ec595f.js" crossorigin="anonymous"></script>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
