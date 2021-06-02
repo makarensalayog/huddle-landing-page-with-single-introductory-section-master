@@ -16,6 +16,7 @@
 
 body {
   background-image: var(--desktopBG);
+  background-repeat: no-repeat;
   background-color: var(--violet);
   color: var(--white);
   font-family: 'Open Sans';
@@ -62,7 +63,7 @@ body {
 /* registration section */
 .register-title{
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   font-size:2.5rem;
   line-height: 1.5;
   width:90%;
@@ -187,6 +188,7 @@ a:hover {
   @media (max-width:791px) {
     body{
       margin:5%;
+      background-image: var(--mobileBG);
     }
 
     .huddle-logo {
@@ -202,6 +204,7 @@ a:hover {
   @media (max-width:500px) {
     body{
       margin:5% 7%;
+      background-image: var(--mobileBG);
     }
 
     .huddle-logo {
